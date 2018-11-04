@@ -11,7 +11,6 @@ function setup() {
     textAlign(CENTER,CENTER);
     //pixelDensity(1);
     frameRate(60);
-    canvas.parent('sketch-holder');
 }
   function draw() {
     translate(width/2,height/2);
@@ -26,14 +25,11 @@ function setup() {
     var h = d.getHours(); // + p_m;
     var p_h = h%12/12 + .001;
     
-    background(100);  
+    background(0);  
     noStroke();
     fill(21);
     ellipse(0,0,170,170);  
     // text
-    fill(196);
-    textStyle(BOLD);
-    text(("00"+parseInt(s)).substr(-2),0,0);
     
     // circles
   
