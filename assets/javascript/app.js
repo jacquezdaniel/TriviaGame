@@ -155,8 +155,8 @@ function hidepicture () {
 
 $("#reset").on("click", function() {
 	$("#reset").hide();
-	$("#answers").empty();
-	$("#options").empty();
+	$("#answer").empty();
+	$("#option").empty();
 	for(var i = 0; i < holder.length; i++) {
 		options.push(holder[i]);
 	}
